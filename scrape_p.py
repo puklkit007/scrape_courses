@@ -90,25 +90,3 @@ f = open('output.txt', 'w')
 simplejson.dump(l, f)
 f.close()
 
-# clnk = driver.find_element_by_xpath("/html/head/script[1]").get_attribute("innerHTML")
-
-# clink = json.loads(clnk)
-
-# eurl = clink['embedUrl']
-
-# l.append(eurl)
-
-# for i in range(2,5):
-# 	driver.find_element_by_xpath(f'//*[@id="courseSidebar"]/div[2]/div[1]/ul/li[{i}]').click()
-# 	time.sleep(5)
-# 	clnk = driver.find_element_by_xpath("/html/head/script[1]").get_attribute("innerHTML")
-# 	clink = json.loads(clnk)
-# 	eurl = clink['embedUrl']
-# 	l.append(eurl)
-
-# r = requests.get(eurl)
-# soup = BeautifulSoup(r.content, 'html5lib')
-# s = soup.find_all("script")[4].text
-# subs = "https://embed-ssl.wistia.com/deliveries"
-# res = [i.start() for i in re.finditer(subs, s)]
-# print(s[res[1]+40:res[1]+80])
